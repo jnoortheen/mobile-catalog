@@ -47,3 +47,8 @@ Features:
 1.  Using OAuth2 based user syste to manage site contents
 2.  Secured cookie usage
 3.  Single Page app using AngualrJS
+
+Notes while deploying:
+----------------------
+-   Any database engine can be used for the apllication backend if they are supported by SQLAlchemy and the respective db engine driver is installed. 
+-   Update the SQLALCHEMY_DATABASE_URI variable in the app.py to use correct connection URI to the database.

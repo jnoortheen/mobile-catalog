@@ -19,7 +19,8 @@ app = Flask(__name__)
 app.config.update(dict(
     DEBUG=True,
     SECRET_KEY=str(uuid.uuid4()),
-    SQLALCHEMY_DATABASE_URI='sqlite:///app.db',
+#    SQLALCHEMY_DATABASE_URI='sqlite:///app.db',
+    SQLALCHEMY_DATABASE_URI='postgresql://catalog:catalog@localhost/appdb',
 ))
 app.permanent_session_lifetime = datetime.timedelta(days=3)
 db.init_app(app)
