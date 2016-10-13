@@ -52,3 +52,4 @@ Notes while deploying:
 ----------------------
 -   Any database engine can be used for the apllication backend if they are supported by SQLAlchemy and the respective db engine driver is installed. 
 -   Update the SQLALCHEMY_DATABASE_URI variable in the app.py to use correct connection URI to the database.
+-   Update the authorised URI section in the Google Credentials and then update the client_secrets.json file.
