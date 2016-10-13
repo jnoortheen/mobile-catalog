@@ -20,7 +20,7 @@ app = Flask(__name__)
 app.config.update(dict(
     DEBUG=True,
     SECRET_KEY=str(uuid.uuid4()),
-#    SQLALCHEMY_DATABASE_URI='sqlite:///app.db',
+    #    SQLALCHEMY_DATABASE_URI='sqlite:///app.db',
     SQLALCHEMY_DATABASE_URI='postgresql://catalog:catalog@localhost/appdb',
 ))
 app.permanent_session_lifetime = datetime.timedelta(days=3)
@@ -71,7 +71,7 @@ def checkCookieHash(cookie_dict):
 def gplus_connect():
     # initiating flow object
     flow = client.flow_from_clientsecrets(
-        (os.path.join(os.path.dirname(__file__), 'client_secrets.json')),
+        (os.path.join(os.path.abspath(os.path.dirname(__file__)), 'client_secrets.json')),
         scope='openid email',
         redirect_uri=url_for('gplus_connect', _external=True)
     )
