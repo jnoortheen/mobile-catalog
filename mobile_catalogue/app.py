@@ -13,6 +13,7 @@ import uuid
 import hmac
 from oauth2client import client
 import datetime
+import os
 
 app = Flask(__name__)
 # Load default config and override config from an environment variable
@@ -70,7 +71,7 @@ def checkCookieHash(cookie_dict):
 def gplus_connect():
     # initiating flow object
     flow = client.flow_from_clientsecrets(
-        'client_secrets.json',
+        (os.path.join(os.path.dirname(__file__), 'client_secrets.json')),
         scope='openid email',
         redirect_uri=url_for('gplus_connect', _external=True)
     )
