@@ -1,6 +1,6 @@
 Mobile Catalogue
 ================
-Single page web app to store and retrieve Mobile Information with Google OAuth2 User Authentication.
+AngularJS Single Page App to store and retrieve Mobile Catalogue Information. Flask is used to provide Back-end support for app with JSON endpoins. Users can create accounts using their Google accounts (Uses OAuth2 User Authentication).
 
 Technologies
 ------------
