@@ -2,13 +2,13 @@
 
 AngularJS Single Page App to store and retrieve Mobile Catalogue Information. Flask is used to provide Back-end support for app with JSON endpoins. Users can create accounts using their Google accounts (Uses OAuth2 User Authentication).
 
-## stacks
+## Tech Stack
 
 1.  Python
-2.  Flask
-5.  AngularJS
-6.  Bootstrap3
-3.  SQLAlchemy
+1.  Flask
+1.  AngularJS
+1.  Bootstrap3
+1.  SQLAlchemy
 
 ## How To Run
 
@@ -47,6 +47,11 @@ AngularJS Single Page App to store and retrieve Mobile Catalogue Information. Fl
 1.  Using OAuth2 based user syste to manage site contents
 1.  Secured cookie usage
 1.  Single Page app using AngualrJS
+
+## ScreenShots:
+
+![Home](./screenshots/after_login.png?raw=true)
+![Categories](./screenshots/category_items.png?raw=true)
 
 ## Notes while deploying:
 
